@@ -476,7 +476,7 @@
         <property name="arguments">
             <list>
                 <value type="java.lang.String">${jwt.token.signing-key:#{null}}</value>
-                <value type="java.lang.String">${uaa.url}</value>
+                <value type="java.lang.String">${uaa.url:http://localhost:8080/uaa}</value>
             </list>
         </property>
         <property name="staticMethod"

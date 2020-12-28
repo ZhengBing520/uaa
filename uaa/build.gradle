@@ -146,4 +146,5 @@ integrationTest {
 war {
     //workaround for maven <scope>optional</scope>
     rootSpec.exclude("**/spring-security-oauth-*.jar")
+    archiveFileName = 'uaa.war'
 }

@@ -7,11 +7,12 @@ buildscript {
     apply(from: "dependencies.gradle")
 
     repositories {
-        mavenCentral()
-        jcenter()
+        maven { url 'https://maven.aliyun.com/repository/central'}
         maven {
             url("https://repo.spring.io/plugins-release")
         }
+        mavenCentral()
+        jcenter()
     }
 
     dependencies {
@@ -44,6 +45,7 @@ allprojects {
     configurations.provided.transitive = false
 
     repositories {
+        maven { url 'https://maven.aliyun.com/repository/central'}
         mavenCentral()
         maven {
             url("https://build.shibboleth.net/nexus/content/repositories/releases/")
@@ -132,7 +134,7 @@ subprojects {
     }
 
     repositories {
-        mavenCentral()
+        maven { url 'https://maven.aliyun.com/repository/central'}
         maven {
             url("https://jitpack.io")
         }
@@ -142,6 +144,7 @@ subprojects {
         maven {
             url("https://repo.maven.apache.org/maven2")
         }
+        mavenCentral()
     }
 }
 

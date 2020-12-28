@@ -184,6 +184,7 @@
         <constructor-arg name="timeService" ref="timeService"/>
     </bean>
 
+
     <http name="secFilterLoginServerPasswordEndpoints" create-session="stateless"
           entry-point-ref="oauthAuthenticationEntryPoint" authentication-manager-ref="emptyAuthenticationManager"
           pattern="/password_*" xmlns="http://www.springframework.org/schema/security" use-expressions="true">

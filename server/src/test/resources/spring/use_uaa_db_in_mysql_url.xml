@@ -11,7 +11,7 @@
             <prop key="database.driverClassName">org.mariadb.jdbc.Driver</prop>
             <prop key="database.url">jdbc:mysql://127.0.0.1:3306/uaa?useSSL=true&amp;trustServerCertificate=true</prop>
             <prop key="database.username">root</prop>
-            <prop key="database.password">changeme</prop>
+            <prop key="database.password">123456</prop>
         </util:properties>
     </beans>
 
